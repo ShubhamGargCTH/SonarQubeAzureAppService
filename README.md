@@ -12,7 +12,7 @@ Going through the sonar quobe source code i found out that sonar quebe enforces 
 
 See line -144 here  - https://github.com/SonarSource/sonarqube/blob/3f6f5496277c76c2498fd245a112931d19830497/server/sonar-main/src/main/java/org/sonar/application/command/EsJvmOptions.java
 
-This code also tells us that we can disable the bootstrap checks by setting env variable - sonar.es.bootstrap.checks.disable to true. Simple enough but doesnt work.
+This code also tells us that we can disable the bootstrap checks by setting env variable - #sonar.es.bootstrap.checks.disable to true. Simple enough but doesnt work.
 
 After hours of research i found out that azure app service replace "." with "-" for the values passed as appsetting. Thanks to post here - https://r3dlin3.github.io/2020/01/01/sonarqube-app-service/
 
